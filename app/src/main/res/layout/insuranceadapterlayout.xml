@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:orientation="vertical"
+    >
+
+
+    <!-- Main CardView -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="1dp">
+
+        <!-- Inner LinearLayout for content -->
+        <LinearLayout
+            android:id="@+id/lineiarcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:background="@drawable/insuranceforcardbackground">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date:"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/regdate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Reg_date"
+                    android:textSize="14sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <View
+                android:layout_width="140dp"
+                android:layout_height="2dp"
+                android:background="@color/white"
+                android:layout_marginStart="10dp"/>
+            <!-- Owner Name Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Owner Name:"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/ownerName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Owner Name"
+                    android:textSize="14sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="sans-serif-medium"/>
+            </LinearLayout>
+
+            <!-- Mobile Number Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+              >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile:"
+                    android:textStyle="bold"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/mobileNo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Mobile"
+                    android:textSize="14sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="sans-serif-medium"/>
+            </LinearLayout>
+
+            <!-- Vehicle Type Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+               >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicle:"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/Vehicletype"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Vehicle"
+                    android:textSize="14sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="sans-serif-medium"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status:"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/white"
+                    android:layout_marginEnd="8dp"/>
+
+                <TextView
+                    android:id="@+id/statusTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Vehicle"
+                    android:textSize="14sp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="sans-serif-medium"/>
+            </LinearLayout>
+
+            <!-- Action Buttons CardView -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="26dp"
+                app:cardElevation="4dp"
+                android:layout_marginTop="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:background="@drawable/insuranceforcardbackground">
+
+
+
+                    <!-- Delete Button -->
+                    <ImageButton
+                        android:id="@+id/deleteinsurance"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_deleting"
+                        android:contentDescription="Delete"
+                        android:layout_marginEnd="8dp"
+                        app:tint="@android:color/white" />
+
+                    <!-- Spacer -->
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+
+                    <!-- Phone Call Button -->
+                    <ImageButton
+                        android:id="@+id/phonecallInsurance"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_phonecall"
+                        android:contentDescription="Phone Call"
+                        android:layout_marginEnd="8dp"
+                        app:tint="@android:color/white" />
+
+                    <!-- Message Button -->
+                    <ImageButton
+                        android:id="@+id/messageInsurance"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_message"
+                        android:contentDescription="Message"
+                        android:layout_marginEnd="8dp"
+                        app:tint="@android:color/white" />
+
+                    <!-- Edit Button -->
+                    <ImageButton
+                        android:id="@+id/editInsurance"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_edit"
+                        android:contentDescription="Edit"
+                        android:layout_marginEnd="8dp"
+                        app:tint="@android:color/white" />
+
+                    <!-- View Button -->
+                    <ImageButton
+                        android:id="@+id/viewEyebtnInsurance"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/ic_eyeview"
+                        android:contentDescription="View"
+                        app:tint="@android:color/white" />
+                    <ImageButton
+                        android:id="@+id/shareInsurance"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@drawable/shareinsurance"
+                        android:visibility="gone"
+                        app:tint="@android:color/white" />
+                    <!-- Initially hidden -->
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

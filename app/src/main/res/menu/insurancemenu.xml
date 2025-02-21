@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/insurance_search"
+        android:icon="@drawable/ic_searching"
+        android:title="search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always"
+
+        />
+
+    <item
+        android:id="@+id/importdatafrom"
+        android:title="import "
+        app:showAsAction="never"
+        android:foregroundTint="?attr/colorOnSurface"
+        />
+
+    <item
+        android:id="@+id/exportfromhere"
+        android:title="export "
+        app:showAsAction="never"
+        android:foregroundTint="?attr/colorOnSurface"
+        />
+    <item
+        android:id="@+id/filterList"
+        android:title="FilterByMonth"
+        app:showAsAction="always"
+        android:icon="@drawable/filtering"
+        />
+    <item
+        android:id="@+id/notifications"
+        android:title="notification"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_notification"
+
+        />
+</menu>

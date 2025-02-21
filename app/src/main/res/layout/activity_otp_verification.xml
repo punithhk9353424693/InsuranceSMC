@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Button to send OTP -->
+    <Button
+        android:id="@+id/sendOtpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/buttonfor"
+        android:text="Send OTP" />
+
+    <!-- EditText for OTP input -->
+    <EditText
+        android:id="@+id/otpEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter OTP"
+        android:inputType="number"
+        android:layout_marginTop="100dp"
+        android:visibility="gone"/>
+
+    <!-- Button to verify OTP -->
+    <Button
+        android:id="@+id/verifyOtpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify OTP"
+        android:visibility="gone"
+        android:background="@drawable/buttonfor"
+
+        />
+</LinearLayout>

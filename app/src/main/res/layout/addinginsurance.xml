@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/updatecard"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/backwordadd"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:scaleType="center"
+                android:src="@drawable/ic_backword" />
+            <!-- Title TextView -->
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="Add Customer Insurance "
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <!-- State -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/stateInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="State">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/stateEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Registration Number -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/regNoInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Registration Number">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/regNoEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Registration Date -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/regDateInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Registration Date">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/regDateEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:inputType="date" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/expiryInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Expiry Date">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/expiryDateEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:inputType="date" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Owner Name -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ownerNameInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Owner Name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ownerNameEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/ownerFamilyLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Owner Family">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ownerFamilyEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+                <!-- Address -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/addressInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Address">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/addressEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPostalAddress" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Engine Number -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/enginNoInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Engine Number">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/enginNoEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Chassis Number -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/chasNoInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Chassis Number">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/chasNoEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Vehicle Make -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/vehicleMakeInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Vehicle Make">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/vehicleMakeEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Vehicle Model -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/vehicleModelInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Vehicle Model">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/vehicleModelEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Vehicle Class -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/vehicleClassInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Vehicle Class">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/vehicleClassEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Fuel -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/fuelInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Fuel">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fuelEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Sale Amount -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/saleAmountInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Sale Amount">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/saleAmountEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Seat Capacity -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/seatCapacityInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Seat Capacity">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/seatCapacityEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Mobile -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/mobileInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Mobile">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/mobileEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:maxLength="10" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/statusEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:focusable="false"
+                        android:hint="Status"
+                        android:clickable="true"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Submit Button -->
+                <Button
+                    android:id="@+id/submitButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="32dp"
+                    android:backgroundTint="@color/purple_500"
+                    android:text="add_insurance" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

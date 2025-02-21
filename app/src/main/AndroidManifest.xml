@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:name="MaruthiConsultancyInsurance"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_img"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_img"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.InsuranceSMC"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.InsuranceSMC">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".presentations.insurancepractical.AddInsuranceActivity"/>
+        <activity android:name=".presentations.insurancepractical.InsuranceDetailsActivity"/>
+        <activity android:name=".presentations.insurancepractical.InsuranceHomeActivity"/>
+        <activity android:name=".presentations.insurancepractical.UpdateInsuranceActivity"/>
+        <activity android:name=".presentations.notification.InsuranceExpiryActivity"/>
+        <activity android:name=".presentations.otpverify.OtpActivity"/>
+    </application>
+
+</manifest>
